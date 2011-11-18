@@ -1,26 +1,40 @@
-"Bottles and Kegs", in a vaguely MVC style (and without jQuery).
+<html>
+ <head>
+  <title>Bottles and Kegs!</title>
+  <link type="text/css" href="kegs.css" rel="stylesheet">
+  <script type="text/javascript" src="kegs.js"></script>
+ </head>
 
-"Bottles and Kegs" is a drinking game, where participants sit in a circle and
+ <body id="view">
+  <form>
+   <input type="text" id="number" />
+   <input type="submit" value="check it!" onClick="whatchecker.go();">
+  </form>
+  <h2>Hey, what is this?</h2>
+  <p>This is "Bottles and Kegs", in a vaguely MVC style (and without jQuery).</p>
+
+  <p>"Bottles and Kegs" is a drinking game, where participants sit in a circle and
 count out loud.  The first person says one, the next says two, and so forth.
-When somebody says the wrong thing, they take a drink.
+When somebody says the wrong thing, they take a drink.</p>
 
-Sounds like a pretty boring drinking game, doesn't it?
+  <p>Sounds like a pretty boring drinking game, doesn't it?</p>
 
-The problem is that when the number is divisible by five, you're not supposed
+  <p>The problem is that when the number is divisible by five, you're not supposed
 to say your number, but instead say "bottles".  And when it's divisible by 
 seven, you're to say, "kegs".  And if it's divisible by five and by seven, then
 you say "bottles and kegs".  Just those words in that order.  And the next
 person, the one next to you who just heard you say "kegs"?  They have to start
 the count at the correct number.  Which is whatever number you would have said,
-but didn't, plus one.
+but didn't, plus one.</p>
 
-Now is it starting to sound more interesting?
+  <p>Now is it starting to sound more interesting?</p>
 
-The problem is, your friends always want to play Bottles and Kegs, and you
+  <p>The problem is, your friends always want to play Bottles and Kegs, and you
 always lose.  This was fun at first, but midterms are coming up and you need to
-win a little or you're going to flunk out.  Don't worry; we've got you covered.
+win a little or you're going to flunk out.  Don't worry; we've got you covered.</p>
 
-Here is a handy-dandy app which will help you win.  Just load this baby up on
+  <p>Here is a handy-dandy app which will help you win.  Just load this baby up on
 your phone and when it's your turn, put in the number you're on and hit the
-button.  You'll be told what to say.
-
+button.  You'll be told what to say.</p>
+ </body>
+</html>
