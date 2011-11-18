@@ -1,4 +1,7 @@
-"Bottles and Kegs", in a vaguely MVC style (and without jQuery).
+'''''Bottles and Kegs''''', in a vaguely MVC style (and without jQuery).
+
+[http://jrbl.github.com/kegs/ Try it live here on github!]
+----
 
 "Bottles and Kegs" is a drinking game, where participants sit in a circle and
 count out loud.  The first person says one, the next says two, and so forth.
@@ -16,11 +19,11 @@ but didn't, plus one.
 
 Now is it starting to sound more interesting?
 
-The problem is, your friends always want to play Bottles and Kegs, and you
-always lose.  This was fun at first, but midterms are coming up and you need to
+The problem is, your friends '''always''' want to play Bottles and Kegs, and you
+always lose.  This was fun at first, but ''midterms are coming'', and you need to
 win a little or you're going to flunk out.  Don't worry; we've got you covered.
 
 Here is a handy-dandy app which will help you win.  Just load this baby up on
 your phone and when it's your turn, put in the number you're on and hit the
-button.  You'll be told what to say.
+button.  Just say what we tell you and you'll (probably) make it to morning.
 
