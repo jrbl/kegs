@@ -53,10 +53,46 @@ function Controller() {
 
     this.go = function() {
         var response = model.check(document.getElementById("number").value);
-        alert("Say " + response); 
+        var element = document.getElementById('response');
+        element.innerHTML = "<p id=response_text>You should say " + response + ".</p>";
+    };
+
+    this.toggleClass = function(where, which) {
+        if ((where == null) || (where == '') || (which == null) || (which == '')) {
+            return false;
+        }
+        var elements = document.getElementsByName(where);
+        which = which.toLowerCase();
+        for (var key in elements) {
+            var classes = elements[key].className.toLowerCase();
+            if (classes == which) {
+                elements[key].className = '';
+                return true;
+            }
+            if ('' == classes) {
+                elements[key].className = which;
+                return false;
+            }
+            var loc = classes.search(which);
+            if (-1 == loc) {
+                elements[key].className = classes.concat(' ').concat(which);
+                return false;
+            }
+            if ((0 == loc) && (classes[which.length] == ' ')) {
+                elements[key].className = classes.slice(which.length);
+                return true;
+            }
+            if ((classes[loc-1] == ' ') && (classes.length == loc+which.length)) {
+                elements[key].className = classes.slice(0,loc-1);
+                return true;
+            }
+            if ((classes[loc-1] == ' ') && (classes[loc+which.length] == ' ')) {
+                elements[key].className = classes.slice(0,loc-1).concat(classes.slice(loc+which.length));
+                return true;
+            }
+            return false;
+        }
     };
 
 
 };
-
-

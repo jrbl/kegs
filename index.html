@@ -6,20 +6,24 @@
  </head>
 
  <body id="view">
-  <form>
-   <input type="text" id="number" />
-   <input type="submit" value="check it!" onClick="whatchecker.go();">
-  </form>
+     <table>
+         <tr><td>
+  <input type="text" id="number" />
+  <input type="submit" value="check it!" onClick="whatchecker.go();">
+  </td><td><div id="response"></div></td></tr></table>
+  <div class=explanation>
+   <div class=explanation name=preamble>
+    <h2>Hey, what is this?</h2>
+    <p>"Bottles and Kegs" is a drinking game, where participants sit in a
+    circle and count out loud.  The first person says any number, the next says 
+    the next number, and so forth.  When somebody says the wrong thing, they 
+    take a drink.</p>
+    <p class=click_for_more name=click_for_more onClick="whatchecker.toggleClass('learn_more', 'hidden');  whatchecker.toggleClass('click_for_more', 'hidden');">Click here for more information...</p>
+   </div>
+   <div class="explanation hidden" name=learn_more>
+    <p>Sounds like a pretty boring drinking game, doesn't it?</p>
 
-  <h2>Hey, what is this?</h2>
-
-  <p>"Bottles and Kegs" is a drinking game, where participants sit in a circle and
-  count out loud.  The first person says any number, the next says the next 
-  number, and so forth.  When somebody says the wrong thing, they take a drink.</p>
-
-  <p>Sounds like a pretty boring drinking game, doesn't it?</p>
-
-  <p>The problem is that when the number is divisible by five, you're not supposed
+    <p>The problem is that when the number is divisible by five, you're not supposed
 to say your number, but instead say "bottles".  And when it's divisible by 
 seven, you're to say, "kegs".  And if it's divisible by five and by seven, then
 you say "bottles and kegs".  Just those words in that order.  And the next
@@ -27,19 +31,18 @@ person, the one next to you who just heard you say "kegs"?  They have to start
 the count at the correct number.  Which is whatever number you would have said,
 but didn't, plus one.</p>
 
-  <p>Now is it starting to sound more interesting?</p>
+    <p>Now is it starting to sound more interesting?</p>
 
-  <p>The problem is, your friends <b>always</b> want to play Bottles and Kegs, and you
-  always lose.  This was fun at first, but <i>midterms are coming</i> and you need to
+    <p>The problem is, your friends always want to play Bottles and Kegs, and you
+always lose.  This was fun at first, but midterms are coming up and you need to
 win a little or you're going to flunk out.  Don't worry; we've got you covered.</p>
 
-  <p>Here is a handy-dandy app which will help you win.  Just load this baby up on
+    <p>Here is a handy-dandy app which will help you win.  Just load this baby up on
 your phone and when it's your turn, put in the number you're on and hit the
-button.  Just say what we tell you and you'll (probably) make it to morning.</p>
+button.  You'll be told what to say.</p>
 
-  <p>Or, if nobody's cheating and everyone's already smashed, you can use this
-app to check whether it's time for the speaker to drink more.</p>
-
-  <p class="note"><a href="https://github.com/jrbl/kegs">You can go check out the source code</a></p>
+    <p class="note"><a href="https://github.com/jrbl/kegs">You can go check out the source code</a></p>
+   </div>
+  </div>
  </body>
 </html>

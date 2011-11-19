@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    text: black;
+}
+
+p.note {
+    font-size: x-small;
+}
+
+p.click_for_more {
+    text: blue;
+    font-style: underline;
+    font-size: xx-small;
+    text-align: right;
+}
+
+.hidden {
+    display: none;
+}
+
+p#response_text {
+    font-size: medium;
+    text-align: center;
+    text: green;
+}
